@@ -1,0 +1,17 @@
+section {
+    background-color: #fff; /* blanco */
+    padding: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: start;
+    border-radius: 5%;
+}
+
+section form{
+    text-align: center;
+}
+
+body{
+    margin-top: 100px;
+    background-color: blanchedalmond;
+}

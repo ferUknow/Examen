@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <section>
+        <form id="registro-form" action="login.php" method="post" onsubmit="return validarFormulario()">
+            <h1>Iniciar Sesion</h1>
+            <h2>Usuario:</h2>
+            <input type="text" id="username" name="username">
+            <h2>Constraseña</h2>
+            <input type="password" id="password" name="password">
+            <br><br>
+            <button type="submit">Ingresar</button><br><br>
+            <button><a href="inicio.html">Inicio</a></button>
+        </form>
+    </section>
+
+    <script>
+        function validarFormulario() {
+            // Obtener los valores de los campos
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Validar que los campos no estén vacíos
+            if (username.trim() === "" || password.trim() === "") {
+                alert("Por favor, completa todos los campos.");
+                return false; // Evita el envío del formulario
+            }
+
+            return true; // Permite el envío del formulario
+        }
+    </script>
+</body>
+</html>
